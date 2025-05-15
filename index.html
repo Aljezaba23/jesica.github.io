@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flappy Minion con Bananas</title>
+  <style>
+    body {
+      margin: 0;
+      background: #a3d9ff;
+      overflow: hidden;
+      font-family: 'Arial', sans-serif;
+    }
+    #gameCanvas {
+      display: block;
+      margin: 20px auto;
+      background: #87ceeb;
+      border: 3px solid #000;
+      border-radius: 10px;
+    }
+    .controls {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      user-select: none;
+    }
+    .btn {
+      font-size: 30px;
+      padding: 15px 25px;
+      margin: 0 10px;
+      border-radius: 10px;
+      border: none;
+      background-color: #ffd966;
+      cursor: pointer;
+      user-select: none;
+      box-shadow: 0 4px #c4a600;
+    }
+    .btn:active {
+      box-shadow: none;
+      transform: translateY(4px);
+      background-color: #f1c232;
+    }
+    #scoreDisplay {
+      text-align: center;
+      font-size: 24px;
+      color: #fff;
+      text-shadow: 2px 2px 5px #000;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+  <div class="controls">
+    <button id="jumpBtn" class="btn">🕊️ Volar</button>
+  </div>
+
+  <div id="scoreDisplay">Puntaje: 0</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
